@@ -4,20 +4,22 @@ import 'package:flutter/material.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:state_notifier/state_notifier.dart';
 
-part 'pokemon_choose_page_notifier.freezed.dart';
+part 'pokemon_detail_page_notifier.freezed.dart';
 
 @freezed
-abstract class PokemonChoosePageState with _$PokemonChoosePageState {
-  const factory PokemonChoosePageState({
+abstract class PokemonDetailPageState with _$PokemonDetailPageState {
+  const factory PokemonDetailPageState({
     @Default(0) int counter,
-  }) = _PokemonChoosePageState;
+  }) = _PokemonDetailPageState;
 }
 
-class PokemonChoosePageNotifier extends StateNotifier<PokemonChoosePageState>
+class PokemonDetailPageNotifier extends StateNotifier<PokemonDetailPageState>
     with LocatorMixin {
-  PokemonChoosePageNotifier({
+  PokemonDetailPageNotifier({
     @required this.context,
-  }) : super(const PokemonChoosePageState());
+  }) : super(const PokemonDetailPageState(
+
+  ));
   final BuildContext context;
 
   @override

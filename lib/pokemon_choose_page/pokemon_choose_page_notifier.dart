@@ -17,7 +17,9 @@ class PokemonChoosePageNotifier extends StateNotifier<PokemonChoosePageState>
     with LocatorMixin {
   PokemonChoosePageNotifier({
     @required this.context,
-  }) : super(const PokemonChoosePageState());
+  }) : super(const PokemonChoosePageState(
+
+  ));
   final BuildContext context;
 
   @override
